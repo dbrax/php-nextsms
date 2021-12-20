@@ -5,7 +5,7 @@
         "epmnzava",
         "nextsms"
     ],
-    "homepage": "https://github.com/epmnzava/nextsms",
+    "homepage": "https://github.com/dbrax/php-nextsms",
     "license": "MIT",
     "type": "library",
     "authors": [
