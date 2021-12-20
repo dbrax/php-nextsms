@@ -4,5 +4,7 @@ namespace Epmnzava\Nextsms;
 
 class Nextsms
 {
-    // Build your next great package.
+    public function __construct()
+    {
+    }
 }
