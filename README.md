@@ -12,7 +12,21 @@ composer require epmnzava/nextsms
 ## Usage
 
 ```php
-// Usage coming soon
+use Epmnzava\Nextsms;
+
+public function send_sms_to_one_destination(){
+
+    $sms=new Nextsms;
+    $sms->sendSms("hellow world", "STOREWID", "255679079774");
+}
+
+public function send_sms_to_multiple_destination(){
+
+    $sms=new Nextsms;
+    $sms->send_sms_mutipledestination("hellow world", "STOREWID", ["255679079774","255768172016"]);
+}
+
+
 ```
 
 ### Testing
