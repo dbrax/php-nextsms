@@ -17,15 +17,41 @@ use Epmnzava\Nextsms;
 public function send_sms_to_one_destination(){
 
     $sms=new Nextsms;
-    $sms->sendSms("hellow world", "STOREWID", "255679079774");
+    $response=$sms->sendSms("hellow world", "STOREWID", "255679079774");
 }
 
 public function send_sms_to_multiple_destination(){
 
     $sms=new Nextsms;
-    $sms->send_sms_mutipledestination("hellow world", "STOREWID", ["255679079774","255768172016"]);
+    $response=$sms->send_sms_mutipledestination("hellow world", "STOREWID", ["255679079774","255768172016"]);
 }
 
+//getting all delivery reports
+
+public function getAllDeliveryReports(){
+    $sms=new Nextsms;
+    $response=$sms->getAllDeliveryReports();
+}
+
+//getting single message delivery report
+
+
+public function getSingleMessageDeliveryReport(){
+    $messageId="28089492984101631440";
+        $sms=new Nextsms;
+
+        $reponse=$sms->getMessageDeliveryReport($messageId);
+
+}
+
+
+//get your  sms balance
+
+public function getBalance(){
+     $sms=new Nextsms;
+
+        $reponse=$sms->getSmsBalance();
+}
 
 ```
 
