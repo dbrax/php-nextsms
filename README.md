@@ -16,7 +16,7 @@ use Epmnzava\Nextsms;
 
 public function send_sms_to_one_destination(){
 
-    $sms=new Nextsms;
+    $sms=new Nextsms("https://messaging-service.co.tz", "Storewid", "3434");
     $response=$sms->sendSms("hellow world", "STOREWID", "255679079774");
 }
 
