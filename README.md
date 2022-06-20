@@ -19,20 +19,21 @@ use Epmnzava\Nextsms;
 
 public function send_sms_to_one_destination(){
 
-    $sms=new Nextsms;
+    $sms=new Nextsms("https://messaging-service.co.tz", "Storewid", "3434");
     $response=$sms->sendSms("hellow world", "STOREWID", "255679079774");
 }
 
 public function send_sms_to_multiple_destination(){
 
-    $sms=new Nextsms;
+    $sms=new Nextsms("https://messaging-service.co.tz", "Storewid", "3434");
+
     $response=$sms->send_sms_mutipledestination("hellow world", "STOREWID", ["255679079774","255768172016"]);
 }
 
 //getting all delivery reports
 
 public function getAllDeliveryReports(){
-    $sms=new Nextsms;
+    $sms=new Nextsms("https://messaging-service.co.tz", "Storewid", "3434");
     $response=$sms->getAllDeliveryReports();
 }
 
@@ -41,7 +42,7 @@ public function getAllDeliveryReports(){
 
 public function getSingleMessageDeliveryReport(){
     $messageId="28089492984101631440";
-        $sms=new Nextsms;
+    $sms=new Nextsms("https://messaging-service.co.tz", "Storewid", "3434");
 
         $reponse=$sms->getMessageDeliveryReport($messageId);
 
@@ -51,7 +52,7 @@ public function getSingleMessageDeliveryReport(){
 //get your  sms balance
 
 public function getBalance(){
-     $sms=new Nextsms;
+    $sms=new Nextsms("https://messaging-service.co.tz", "Storewid", "3434");
 
         $reponse=$sms->getSmsBalance();
 }
