@@ -54,7 +54,7 @@ class Nextsms
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'GET',
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Basic ' . $this->basicAuth
+                'Authorization: Basic ' . $this->baseauth
             ),
         ));
 
@@ -78,7 +78,7 @@ class Nextsms
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'GET',
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Basic ' . $this->basicAuth
+                'Authorization: Basic ' . $this->baseauth
             ),
         ));
 
@@ -102,7 +102,7 @@ class Nextsms
             CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
             CURLOPT_CUSTOMREQUEST => 'GET',
             CURLOPT_HTTPHEADER => array(
-                'Authorization: Basic ' . $this->basicAuth
+                'Authorization: Basic ' . $this->baseauth
             ),
         ));
 
